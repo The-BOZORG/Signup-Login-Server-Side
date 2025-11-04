@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "username": "soroush",
+      "email": "soroush@gmail.com",
+      "password": "123456",
+      "createdAt": "2025-11-04T14:42:03.449Z"
+    },
+    {
+      "username": "ali",
+      "email": "ali@yahoo.com",
+      "password": "123654",
+      "createdAt": "2025-11-04T14:43:51.841Z"
+    }
+  ]
+}
