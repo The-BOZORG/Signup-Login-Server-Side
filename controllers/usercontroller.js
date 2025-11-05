@@ -1,5 +1,6 @@
 import { UserModel } from '../models/usermodle.js';
 import bcrypt, { hash } from 'bcryptjs';
+import tokenGenerate from '../utils/tokengenerate.js';
 
 export const registerUserCtrl = async (req, res) => {
   try {
@@ -32,11 +33,14 @@ export const loginUserCtrl = async (req, res) => {
   try {
     const { email, password } = req.body;
     const userFound = await UserModel.findByEmail(email);
-    if (userFound && (await bcrypt.compare(password, userFound?.password))) {
+    if (userFound && (await bcrypt.compare(password, userFound.password))) {
+      const token = tokenGenerate(userFound.id);
+      await UserModel.updateToken(userFound.id, token);
       res.json({
         status: 'success',
         msg: 'login successful',
         data: userFound,
+        token,
       });
     } else {
       return res.status(404).json({ status: 'fail', msg: 'user not found' });
