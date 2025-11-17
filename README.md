@@ -7,6 +7,6 @@ This project provides a basic user registration and login system. The goal of th
 
 ## Usage
 1. Run npm start in the terminal.
-2. Open your browser and go to http://localhost:3000.
+2. Open your browser and go to http://localhost:<port>.
 3. On the signup page, enter user details.
 4. Log in using the registered credentials.
