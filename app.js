@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 app.use(express.static(path.join(path.resolve(), 'src')));
 
-app.use(logger);
+app.use(logger)
 app.use('/', userRoutes);
 
 export default app;
