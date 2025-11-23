@@ -1,6 +1,6 @@
 # Signup-Login Project
 
-A simple signup and login system with backend (Server side).
+A simple signup and login system with only backend (server-side).
 
 ## Description
 
@@ -8,7 +8,7 @@ This project provides a basic user registration and login system. The goal of th
 
 > **Note**: This project uses lowdb for data storage. All user data is saved in a local file called db.json inside the project directory.
 
-> **Note**:This project is server-side only and does not have a frontend.
+> **Note**: This project is server-side only and does not have a frontend.
 
 ## How it works
 
