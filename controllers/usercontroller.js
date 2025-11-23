@@ -2,6 +2,7 @@ import { UserModel } from '../models/usermodle.js';
 import bcrypt, { hash } from 'bcryptjs';
 import tokenGenerate from '../utils/tokengenerate.js';
 
+
 export const registerUserCtrl = async (req, res) => {
   try {
     const { username, email, password } = req.body;

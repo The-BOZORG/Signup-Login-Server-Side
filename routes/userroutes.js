@@ -4,6 +4,7 @@ import {
   loginUserCtrl,
 } from '../controllers/usercontroller.js';
 
+
 const userRoutes = express.Router();
 
 userRoutes.post('/register', registerUserCtrl);
